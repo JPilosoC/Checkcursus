@@ -8,7 +8,7 @@ if [ $(uname) = "Darwin" ]; then
 fi
 
 echo "Checkcursus deployment script"
-echo "(C) 2020, JostynP100"
+echo "(C) 2020, JPilosoC"
 
 echo ""
 echo "Before you begin: This script will install Procursus with Sileo on Checkra1n."
@@ -79,7 +79,7 @@ echo 'fi' >> checkcursus-device-deploy.sh
 echo '/usr/libexec/firmware' >> checkcursus-device-deploy.sh
 echo 'mkdir -p /etc/apt/sources.list.d/' >> checkcursus-device-deploy.sh
 echo 'echo "Types: deb" > /etc/apt/sources.list.d/checkcursus.sources' >> checkcursus-device-deploy.sh
-echo 'echo "URIs: https://jostynp100.github.io/Checkcursus/" >> /etc/apt/sources.list.d/checkcursus.sources' >> checkcursus-device-deploy.sh
+echo 'echo "URIs: https://jpilosoc.github.io/Checkcursus/" >> /etc/apt/sources.list.d/checkcursus.sources' >> checkcursus-device-deploy.sh
 echo 'echo "Suites: ./" >> /etc/apt/sources.list.d/checkcursus.sources' >> checkcursus-device-deploy.sh
 echo 'echo "Components: " >> /etc/apt/sources.list.d/checkcursus.sources' >> checkcursus-device-deploy.sh
 echo 'echo "" >> /etc/apt/sources.list.d/checkcursus.sources' >> checkcursus-device-deploy.sh
@@ -104,7 +104,7 @@ echo 'rm org.swift.libswift_5.0-electra2_iphoneos-arm.deb' >> checkcursus-device
 echo 'rm checkcursus-device-deploy.sh' >> checkcursus-device-deploy.sh
 
 echo "Downloading Resources..."
-curl -L -O https://github.com/JostynP100/Checkcursus/raw/master/bootstrap_1500.tar.gz -O https://github.com/JostynP100/Checkcursus/raw/master/bootstrap_1600.tar.gz -O https://github.com/JostynP100/Checkcursus/raw/master/bootstrap_1700.tar.gz -O https://github.com/JostynP100/Checkcursus/raw/master/migration -O https://github.com/JostynP100/Checkcursus/raw/master/org.coolstar.sileo_2.0.0b6_iphoneos-arm.deb -O https://github.com/JostynP100/Checkcursus/raw/master/org.swift.libswift_5.0-electra2_iphoneos-arm.deb
+curl -L -O https://github.com/JPilosoC/Checkcursus/raw/master/bootstrap_1500.tar.gz -O https://github.com/JPilosoC/Checkcursus/raw/master/bootstrap_1600.tar.gz -O https://github.com/JPilosoC/Checkcursus/raw/master/bootstrap_1700.tar.gz -O https://github.com/JPilosoC/Checkcursus/raw/master/migration -O https://github.com/JPilosoC/Checkcursus/raw/master/org.coolstar.sileo_2.0.0b6_iphoneos-arm.deb -O https://github.com/JPilosoC/Checkcursus/raw/master/org.swift.libswift_5.0-electra2_iphoneos-arm.deb
 clear
 if [[ ! "${ARM}" = yes ]]; then
 	echo "Copying Files to your device"
